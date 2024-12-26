@@ -3,6 +3,8 @@
 # DynDNS Update Skript Linux v1.0 by Jonny Tutorials
 # https://github.com/jonnytutorials/Strato-dyndns-linux/
 #
+# added line for update more fields v1.1 by andronaut42
+# https://github.com/andronaut42/Strator-dyndns-linux/
 
 #############################
 ###### IP-Get Services ######
@@ -33,3 +35,4 @@ USER='' # Domain
 DOMAIN='' # Domain
 
 curl -s https://$USER:$PASSWORD@dyndns.strato.com/nic/update?hostname=$DOMAIN&myip=$IP
+# curl -s https://$USER:$PASSWORD@dyndns.strato.com/nic/update?hostname=$DOMAIN&myip=$IP&wildcard=$IP&mx=$IP&backmx=$IP
